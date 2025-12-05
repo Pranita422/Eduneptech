@@ -1,0 +1,64 @@
+{
+  "semesters": [
+    {
+      "sem": 1,
+      "subjects": [
+        "USIT101 – Imperative Programming",
+        "USIT102 – Digital Electronics",
+        "USIT103 – Operating Systems",
+        "USIT104 – Discrete Mathematics",
+        "USIT105 – Communication Skills"
+      ]
+    },
+    {
+      "sem": 2,
+      "subjects": [
+        "USIT201 – Object Oriented Programming",
+        "USIT202 – Microprocessor Architecture",
+        "USIT203 – Web Programming",
+        "USIT204 – Numerical & Statistical Methods",
+        "USIT205 – Green Computing"
+      ]
+    },
+    {
+      "sem": 3,
+      "subjects": [
+        "USIT301 – Python Programming",
+        "USIT302 – Data Structures",
+        "USIT303 – Computer Networks",
+        "USIT304 – Database Management Systems",
+        "USIT305 – Applied Mathematics"
+      ]
+    },
+    {
+      "sem": 4,
+      "subjects": [
+        "USIT401 – Core Java",
+        "USIT402 – Embedded Systems",
+        "USIT403 – Computer Oriented Statistical Techniques",
+        "USIT404 – Software Engineering",
+        "USIT405 – Computer Graphics & Animation"
+      ]
+    },
+    {
+      "sem": 5,
+      "subjects": [
+        "USIT501 – Software Project Management",
+        "USIT502 – Internet of Things",
+        "USIT503 – Advanced Web Programming",
+        "USIT504 – Artificial Intelligence",
+        "USIT506 – Enterprise Java"
+      ]
+    },
+    {
+      "sem": 6,
+      "subjects": [
+        "USIT601 – Software Quality Assurance",
+        "USIT602 – Security in Computing",
+        "USIT603 – Business Intelligence",
+        "USIT604 – Principles of GIS",
+        "USIT606 – IT Service Management"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eduneptech - Unlock Learning</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #6C63FF;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #FFD700;
+    }
+
+    nav .btn {
+      padding: 10px 20px;
+      background: #FFD700;
+      color: #6C63FF;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    nav .btn:hover {
+      transform: scale(1.1);
+      background: #FFC107;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 20px 80px 20px;
+      background: linear-gradient(135deg, #6C63FF, #3B82F6);
+      color: white;
+      position: relative;
+    }
+
+    .hero h2 {
+      font-size: 52px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin-bottom: 40px;
+      line-height: 1.5;
+    }
+
+    .hero .buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: #FFD700;
+      color: #3B82F6;
+      padding: 15px 35px;
+      font-weight: bold;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid #fff;
+      padding: 15px 35px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background: #fff;
+      color: #3B82F6;
+      transform: translateY(-5px);
+    }
+
+    .hero img {
+      margin-top: 50px;
+      max-width: 650px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0px 15px 35px rgba(0,0,0,0.3);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    /* Wave separator */
+    .wave {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      margin-top: -5px;
+    }
+
+    .wave svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 80px 20px;
+      background: #f0f4f8;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 42px;
+      margin-bottom: 60px;
+      color: #3B82F6;
+    }
+
+    .features-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 35px;
+      border-radius: 20px;
+      width: 280px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 15px;
+      font-size: 22px;
+      color: #6C63FF;
+    }
+
+    .feature-card p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #6C63FF;
+      color: white;
+      font-weight: 500;
+    }
+
+    @media(max-width:768px){
+      .hero h2 { font-size: 36px; }
+      .hero p { font-size: 18px; }
+      .features-container { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+   <nav>
+
+    <h1 class="flex flex-col  font-extrabold tracking-wide leading-tight">
+  <span class="flex items-center gap-2 text-2xl">
+    🎓 <span><span class="text-white">Edu</span><span style="color:#FFD700">nep</span><span class="text-white">tech</span></span>
+  </span>
+</h1>
+
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <a href="index.html" class="btn">Login / Sign Up</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2>Unlock Your Learning with Assessments</h2>
+    <p>Take unlimited assessments, track your progress, and grow smarter with Eduneptech’s AI-powered learning platform.</p>
+    <div class="buttons">
+      <a href="index.html" class="btn-primary">Start Free Trial</a>
+      <a href="#pricing" class="btn-secondary">View Plans</a>
+    </div>
+    <img src="EP1.png" alt="Dashboard Preview">
+    <div class="wave">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path d="M-0.27,53.11 C149.99,150.00 349.53,-49.98 500.84,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f0f4f8;"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+<section class="features" id="pricing" style="background:#fff; color:#3B82F6;">
+  <h2 style="color:#6C63FF; margin-bottom:50px;">Choose Your Plan</h2>
+  <div class="features-container">
+
+    <!-- Free Plan -->
+    <div class="feature-card" style="border:2px solid #6C63FF;">
+      <h3>Free Plan</h3>
+      <p>Get started with limited assessments and explore the platform.</p>
+      <p style="font-size:24px; font-weight:bold; margin:15px 0;">₹0 / month</p>
+      <ul style="text-align:left; margin-bottom:20px;">
+        <li>✅ 5 Assessments / Month</li>
+        <li>✅ Basic Progress Tracking</li>
+        <li>❌ AI Recommendations</li>
+        <li>❌ Certificates</li>
+      </ul>
+      <a href="index.html" class="btn-primary">Start Free Trial</a>
+    </div>
+
+    <!-- Standard Plan -->
+    <div class="feature-card" style="border:2px solid #3B82F6;">
+      <h3>Standard Plan</h3>
+      <p>Unlimited assessments and full progress tracking for serious learners.</p>
+      <p style="font-size:24px; font-weight:bold; margin:15px 0;">₹499 / month</p>
+      <ul style="text-align:left; margin-bottom:20px;">
+        <li>✅ Unlimited Assessments</li>
+        <li>✅ Progress Tracking</li>
+        <li>✅ AI Recommendations</li>
+        <li>❌ Certificates</li>
+      </ul>
+      <a href="index.html" class="btn-primary">Subscribe Now</a>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="feature-card" style="border:2px solid #FFD700;">
+      <h3>Premium Plan</h3>
+      <p>All features unlocked: certificates, streaks, and AI recommendations.</p>
+      <p style="font-size:24px; font-weight:bold; margin:15px 0;">₹999 / month</p>
+      <ul style="text-align:left; margin-bottom:20px;">
+        <li>✅ Unlimited Assessments</li>
+        <li>✅ Progress Tracking</li>
+        <li>✅ AI Recommendations</li>
+        <li>✅ Certificates & Streaks</li>
+      </ul>
+      <a href="index.html" class="btn-primary">Subscribe Now</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Add this below your pricing section -->
+<section id="aboutSection" style="display:none; padding:40px; text-align:center; background:#f0f4f8; margin-top:30px; border-radius:8px;">
+  <h2 style="color:#6C63FF; font-size:28px; margin-bottom:20px;">About EduNEPTech</h2>
+  <p style="color:#333; font-size:18px; max-width:800px; margin:0 auto;">
+    EduNEPTech is an innovative platform designed to help students follow the NEP 2020 syllabus for students. 
+    You can track your progress, take assessments, get AI-based recommendations, and unlock premium features for an enhanced learning experience.
+  </p>
+</section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <h2>Why Choose Eduneptech?</h2>
+    <div class="features-container">
+      <div class="feature-card">
+        <h3>Unlimited Assessments</h3>
+        <p>Practice as many assessments as you want and improve continuously.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Track Progress</h3>
+        <p>Monitor your scores, streaks, and growth over time.</p>
+      </div>
+      <div class="feature-card">
+        <h3>AI Recommendations</h3>
+        <p>Get personalized suggestions on which assessments to take next.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Certificates</h3>
+        <p>Earn certificates on completing courses and challenges.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Eduneptech. All rights reserved.
+  </footer>
+
+</body>
+</html>
+

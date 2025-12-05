@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eduneptech - Login/Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gradient-to-tr from-violet-100 to-white min-h-screen flex items-center justify-center font-sans">
+
+  <div class="bg-white shadow-lg rounded-2xl w-full max-w-md p-8">
+    <h1 class="text-2xl font-bold text-center text-violet-600 mb-4">Eduneptech</h1>
+    
+
+    <div class="flex justify-center gap-4 mb-6">
+      <button id="loginTab" class="tab-btn text-sm font-semibold text-white bg-violet-500 px-4 py-2 rounded-md shadow">Login</button>
+      <button id="registerTab" class="tab-btn text-sm font-semibold text-violet-500 border border-violet-500 px-4 py-2 rounded-md">Register</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="form space-y-4">
+      <input type="email" placeholder="Email" class="w-full p-2 border rounded-md focus:outline-violet-400" required />
+      <input type="password" placeholder="Password" class="w-full p-2 border rounded-md focus:outline-violet-400" required />
+      <button type="submit" class="w-full bg-violet-500 text-white p-2 rounded-md hover:bg-violet-600">Login</button>
+    </form>
+
+    <!-- Register Form -->
+    <form id="registerForm" class="form space-y-4 hidden">
+      <input type="text" placeholder="Full Name" class="w-full p-2 border rounded-md focus:outline-violet-400" required />
+      <input type="email" placeholder="Email" class="w-full p-2 border rounded-md focus:outline-violet-400" required />
+      <input type="password" placeholder="Password" class="w-full p-2 border rounded-md focus:outline-violet-400" required />
+      <button type="submit" class="w-full bg-violet-500 text-white p-2 rounded-md hover:bg-violet-600">Register</button>
+    </form>
+
+    <div class="text-center text-sm text-gray-500 mt-4">or</div>
+
+    <button class="mt-4 w-full flex justify-center items-center gap-2 border p-2 rounded-md hover:bg-gray-100">
+      <img src="https://img.icons8.com/color/16/google-logo.png"/>
+      Continue with Google
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
